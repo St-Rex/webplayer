@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>网页版播放器</title>
+  </head>
+  <link rel="stylesheet" href="mp3.css">
+  <script src='rookie.js'></script>
+  <script src='JQuery.js'></script>
+  <body>
+    <div class="view">
+      <div id="item-mp3">
+        <div class="bg-glass">
+          <div>
+
+          </div>
+        </div>
+        <div class="headermax">
+          <div id="header">
+                 <div class="header-left">
+                      <img src="image/向下.png" alt="向下">
+                 </div>
+                 <span>演员</span>
+                 <div class="header-right">
+                      <img src="image/三个点.png" alt="目录">
+                 </div>
+           </div>
+          <div class="header-autor">
+              <span>薛之谦</span>
+          </div>
+        </div>
+        <div class="main">
+            <div class="mian-image">
+                <div class="mian-image-down rotate">
+                  <div class="mian-image-top">
+                     <!-- <img src="image/薛之谦.jpg" alt="主图"> -->
+                  </div>
+                </div>
+            </div>
+            <div class="main-down">
+                <div  class="main-time">
+                    <span class="audio-currenttime">00:00</span>
+                </div>
+                <div class="main-range">
+                   <div class="track mid">
+                       <div class="mark">
+                         <div class="dot">
+
+                         </div>
+                       </div>
+                   </div>
+                </div>
+                <div class="main-time">
+                    <span class="audio-durationtime">00:00</span>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+           <div class="console">
+                    <img id='console-last' src="image/上一首.png" class="console-min" alt="上一首">
+                    <img id='console-play' src="image/播放.png" class="console-max" alt="播放">
+                    <img id='console-next' src="image/下一首.png" class="console-min" alt="下一首">
+           </div>
+           <div class="function">
+                <img id='id-function-aixin' src="image/爱心.png" alt="爱心">
+                <img id='id-function-model' src="image/列表.png" alt="列表">
+                <img id='id-function-xiazai' src="image/下载.png" alt="下载">
+                <img id='id-function-zhuanfa' src="image/转发.png" alt="转发">
+                <img id='id-function-mulu' src="image/目录.png" alt="目录">
+           </div>
+        </div>
+        <div class="mp3-list">
+            <div class="list-top">
+              <span>歌曲列表</span>
+            </div>
+            <div class="list-main">
+              <!-- <div class="list-gequ">
+                 <div class="">
+                    <span>安心的温柔</span>
+                    <div class="list-aut">
+                        <span>杨洋</span>
+                    </div>
+                 </div>
+                 <div class="list-aixin">
+                     <img src="image/灰心.png" alt="灰心">
+                     <img src="image/X.png" alt="X">
+                 </div>
+              </div>
+              <div class="list-gequ">
+              </div> -->
+            </div>
+            <div class="list-footer">
+              <span class="">关闭</span>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- <audio id='id-audio-player' controls="controls" class="hide">
+      <source src="music/Rolling In The Deep - Adele.mp3">
+    </audio> -->
+    <audio id='id-audio-player' src="music/Rolling In The Deep - Adele.mp3"></audio>
+    <script>
+        var ckXian = function() {
+        var body  = document.querySelector('body')
+        var style ='<style id="xm" media="screen"> * {outline: 1px red dashed!important} </style>'
+        var i = false
+        body.addEventListener('keydown', function(event) {
+            if (event.keyCode === 77 && event.ctrlKey) {
+                if (i) {
+                    var styletog = document.querySelector('#xm')
+                    styletog.remove()
+                    i = false
+                } else {
+                    body.insertAdjacentHTML('afterbegin', style)
+                    i = true
+                }
+            }
+         })
+        }() // 加载代码 使用 Ctrl + M 显示参考线
+    </script>
+    <script src='range.js'></script>
+    <script src='mp3function.js'></script>
+    <script src='mp3.js'></script
+
+  </body>
+</html>
