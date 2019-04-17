@@ -5,7 +5,7 @@ const songList = [
     author : 'Adele',
     path : 'music/Rolling In The Deep - Adele.mp3',
     isLike: false,
-    avatar: 'adele.jpg',
+    avatar: 'ad.jpg',
     duration: 234,
   },{
     id: 2,
