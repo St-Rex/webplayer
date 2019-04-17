@@ -13,7 +13,7 @@ const songList = [
     author : 'Adele',
     path : 'music/Someone Like You - Adele.mp3',
     isLike: false,
-    avatar: 'adele.jpg',
+    avatar: 'ad.jpg',
     duration: 287,
   },{
     id: 3,
