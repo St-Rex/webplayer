@@ -29,11 +29,11 @@ const bindFooter = () => {
     if (playBtn.alt == '播放') {
       playBtn.alt = '暂停'
       playBtn.src = 'image/暂停.png'
-      window.player.pause()
+      window.player.play()
     } else if (playBtn.alt == '暂停') {
       playBtn.alt = '播放'
       playBtn.src = 'image/播放.png'
-      window.player.play()
+      window.player.pause()
     }
   })
   // 绑定下一首/上一首
