@@ -1,0 +1,60 @@
+*{
+  box-sizing: border-box;
+  user-select: none; /*文本不能被选择*/
+  -webkit-user-select: none;
+  margin: 0;
+  height: 100%;
+  /*overflow: hidden;*/
+  font-family: '微软雅黑';
+  font-weight: 300;
+}
+
+#main {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+/* 在网页设置一个区域 */
+.view{
+  height: 637px; width: 375px;
+  margin: 0 auto;
+  z-index: -99;
+  /*position: relative;*/
+  overflow: hidden;
+}
+
+
+/* 辅助类 */
+.div-imgBg{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.vertical-center{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hide{
+  display: none;
+}
+
+
+/* 动画 */
+.rotate{
+  animation: rotate 16s linear infinite;
+}
+
+@keyframes rotate {
+  0%{
+    transform:rotate(0deg);
+  }
+
+  100%{
+    transform:rotate(360deg);
+  }
+}

@@ -101,22 +101,7 @@ const bindevent = function () {
 
 }
 
-//关闭页面保存数据
-var bindcloseweb = function () {
-  window.addEventListener("beforeunload", function (event) {
-          let nowplay = tplayer.nowplay
-          let model = tplayer.model
-          let xin = tplayer.hongxin
-          let currentTime = Math.floor(audio.currentTime)
-          var data = {
-            'nowplay' : nowplay,
-            'model' : model,
-            'xin' : xin,
-            'currentTime' : currentTime,
-          }
-          localStorage.rookie = JSON.stringify(data)
-        });
-}
+
 
 var tplayer = new HPF()
 

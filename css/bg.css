@@ -1,0 +1,22 @@
+#bg{
+  width: 100%;
+  height: 100%;
+  background: url(../image/xzq.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.bg-glass{
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  filter: blur(1px);
+  position: absolute;
+}
+
+.bg-glass div{
+  background: black;
+  opacity: 0.6;
+}
