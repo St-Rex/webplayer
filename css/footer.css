@@ -14,7 +14,6 @@
 #id-function-play{
   display: inline-block;
   height: 90%; 
-  width: 19%;
   position: relative;
   cursor: pointer;
 }
@@ -22,7 +21,6 @@
 #id-function-last, #id-function-next{
   display: inline-block;
   height: 70%; 
-  width: 15%;
   position: relative;
   top: -7px;
   cursor: pointer;
