@@ -85,6 +85,11 @@ class RookiePlayer {
       }
     })
 
+    // 绑定歌曲播放完之后自动下一首
+    this.audio.addEventListener('ended', () => {
+        this.next()
+    })
+
     // 初始化audio
     this.switchSong(this.currentSong.id)
 

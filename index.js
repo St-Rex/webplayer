@@ -165,20 +165,20 @@ const __main = function () {
     onPause: () => {
       // 切换图表
       const playBtn = e('#id-function-play')
-      playBtn.alt = '暂停'
-      playBtn.src = 'image/暂停.png'
+      playBtn.alt = '播放'
+      playBtn.src = 'image/播放.png'
     },
     onPlay: () => {
       // 切换图表
       const playBtn = e('#id-function-play')
-      playBtn.alt = '播放'
-      playBtn.src = 'image/播放.png'
+      playBtn.alt = '暂停'
+      playBtn.src = 'image/暂停.png'
     },
     onSwith: (currentSong) => {
       // 初始化图表
       const playBtn = e('#id-function-play')
-      playBtn.alt = '播放'
-      playBtn.src = 'image/播放.png'
+      playBtn.alt = '暂停'
+      playBtn.src = 'image/暂停.png'
 
       //  修改歌手
       const authorEle = e('.header-autor span')
