@@ -199,7 +199,7 @@ const __main = function () {
       // 修改背景图片和歌手图片
       const bgEl = document.querySelector('#bg')
       const avatarEl = document.querySelector('.middle-introduced-image')
-      const imgUrl = `url(../image/${currentSong.avatar})`
+      const imgUrl = `url(http://144.202.11.219/webplayer/image/${currentSong.avatar})`
       bgEl.style.background = imgUrl
       avatarEl.style.background = imgUrl
       addBgimg(bgEl)
